@@ -513,7 +513,6 @@ public class frmPresent extends javax.swing.JFrame {
                 console = new Console(file.getAbsolutePath());
             } else {
                 Toolkit.getDefaultToolkit().beep();
-                //“是”：0，“否”：1，“取消”：2
                 int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to replace " + file.getName(), "Warning", JOptionPane.ERROR_MESSAGE);
                 switch (confirm) {
                     case 0:
@@ -571,11 +570,6 @@ public class frmPresent extends javax.swing.JFrame {
     }
 
     public static void startGui() {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -592,8 +586,6 @@ public class frmPresent extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(frmPresent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

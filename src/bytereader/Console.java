@@ -16,7 +16,7 @@ import java.util.Vector;
 
 /**
  *
- * @author amnisia
+ * @author Xuri Li 
  */
 public class Console {
 
